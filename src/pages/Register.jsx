@@ -23,14 +23,14 @@ export default function Register() {
       <div className="text-center mb-10">
         <GlowBadge>
           <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full px-4 py-1.5 text-yellow-400 text-sm font-medium mb-4">
-            <ClipboardList size={14} /> Season 2025
+            <ClipboardList size={14} /> Season 2026
           </div>
         </GlowBadge>
         <FadeUp delay={0.05}>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">Team Registration</h1>
         </FadeUp>
         <FadeUp delay={0.15}>
-          <p className="text-gray-400">Register your team for the UPFL Summer 2025 season. Registration closes June 30, 2025.</p>
+          <p className="text-gray-400">Register your team for the UPFL Summer 2026 season. Registration closes June 30, 2026.</p>
         </FadeUp>
       </div>
 
@@ -110,7 +110,7 @@ export default function Register() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {[
-                { label: 'Team Name *', name: 'teamName', type: 'text', placeholder: 'e.g. Cleveland Cobras', col: 2 },
+                { label: 'Team Name *', name: 'teamName', type: 'text', placeholder: 'e.g. Heavy Breathers', col: 2 },
                 { label: 'Captain Name *', name: 'captainName', type: 'text', placeholder: 'Full name', col: 1 },
                 { label: 'Phone Number *', name: 'phone', type: 'tel', placeholder: '(216) 555-0000', col: 1 },
                 { label: 'Email Address *', name: 'email', type: 'email', placeholder: 'captain@email.com', col: 2 },

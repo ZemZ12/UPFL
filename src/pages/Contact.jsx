@@ -5,7 +5,7 @@ import { FadeUp, StaggerList, StaggerItem, GlowBadge } from '../components/anima
 
 const contactInfo = [
   { icon: MapPin, label: 'Address', value: 'Cleveland Sports Arena\n123 Lakeside Ave\nCleveland, OH 44114', color: 'text-yellow-400' },
-  { icon: Mail, label: 'Email', value: 'info@upfl-cleveland.com', color: 'text-blue-400' },
+  { icon: Mail, label: 'Email', value: 'ummahpremierfutsalleague@gmail.com', color: 'text-blue-400' },
   { icon: Phone, label: 'Phone', value: '(216) 555-0192', color: 'text-purple-400' },
   { icon: Clock, label: 'Office Hours', value: 'Mon-Fri: 9am - 6pm\nSat: 10am - 2pm', color: 'text-yellow-400' },
 ];

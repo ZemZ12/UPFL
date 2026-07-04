@@ -170,8 +170,16 @@ export default function Highlights() {
 
       {/* Video Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14">
-        {featured && <VideoCard match={featured} onClick={setSelected} featured index={0} />}
-        {rest.map((m, i) => <VideoCard key={m.id} match={m} onClick={setSelected} index={i + 1} />)}
+        {highlights.length === 0 ? (
+          <div className="md:col-span-2 bg-[#0b1c1f] border border-[#173040] rounded-2xl p-12 text-center text-gray-500">
+            No highlights yet — check back after the first matches!
+          </div>
+        ) : (
+          <>
+            {featured && <VideoCard match={featured} onClick={setSelected} featured index={0} />}
+            {rest.map((m, i) => <VideoCard key={m.id} match={m} onClick={setSelected} index={i + 1} />)}
+          </>
+        )}
       </div>
 
       {/* Top Plays Leaderboard */}
@@ -183,6 +191,11 @@ export default function Highlights() {
             </h2>
           </FadeUp>
           <div className="flex flex-col gap-3">
+            {topPlays.length === 0 && (
+              <div className="bg-[#0b1c1f] border border-[#173040] rounded-xl p-6 text-center text-gray-500 text-sm">
+                No top plays recorded yet.
+              </div>
+            )}
             {topPlays.map((play, i) => (
               <motion.div
                 key={play.rank}

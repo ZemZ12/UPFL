@@ -61,7 +61,7 @@ export default function Sponsors() {
         </FadeUp>
         <FadeUp delay={0.15}>
           <p className="text-gray-400 max-w-xl mx-auto">
-            UPFL is made possible by the generous support of our sponsors. Thank you for investing in Ummah's futsal community.
+            UPFL is made possible by the generous support of our sponsors. Thank you for investing in Ummah futsal community.
           </p>
         </FadeUp>
       </div>
@@ -80,7 +80,7 @@ export default function Sponsors() {
           <Heart size={32} className="text-yellow-400 mx-auto mb-4" />
           <h2 className="text-white font-black text-2xl mb-3">Become a Sponsor</h2>
           <p className="text-gray-400 mb-6 max-w-lg mx-auto">
-            Support Ummah's growing futsal community and get your brand in front of hundreds of passionate local sports fans every week.
+            Support Ummah growing futsal community and get your brand in front of hundreds of passionate local sports fans every week.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8 text-sm">
             {[

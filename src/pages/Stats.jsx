@@ -11,7 +11,7 @@ export default function Stats() {
       <div className="text-center mb-12">
         <GlowBadge>
           <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full px-4 py-1.5 text-yellow-400 text-sm font-medium mb-4">
-            <TrendingUp size={14} /> Season 2025
+            <TrendingUp size={14} /> Season 2026
           </div>
         </GlowBadge>
         <FadeUp delay={0.05}>

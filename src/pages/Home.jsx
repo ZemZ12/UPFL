@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Trophy, Users, Calendar, TrendingUp, ArrowRight, Star, Play } from 'lucide-react';
-import { standings, fixtures, news } from '../data/leagueData';
+import { teams, standings, fixtures, news } from '../data/leagueData';
 import { highlights } from '../data/highlightsData';
 import { FadeUp, StaggerList, StaggerItem, CountUp, PulseDot } from '../components/animations';
 
@@ -31,9 +31,11 @@ function StatCard({ icon: Icon, value, label, color, countTo, delay }) {
 }
 
 export default function Home() {
+  const playedMatches = fixtures.filter(f => f.played);
   const upcoming = fixtures.filter(f => !f.played).slice(0, 3);
-  const recent = fixtures.filter(f => f.played).slice(-2);
+  const recent = playedMatches.slice(-2);
   const latestNews = news.slice(0, 3);
+  const totalGoals = playedMatches.reduce((sum, match) => sum + (match.homeScore ?? 0) + (match.awayScore ?? 0), 0);
 
   return (
     <div>
@@ -66,7 +68,7 @@ export default function Home() {
             transition={{ duration: 0.6, ease }}
             className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full px-4 py-1.5 text-yellow-400 text-sm font-medium mb-8"
           >
-            <PulseDot /> Summer 2025 Season — Now Live!
+            <PulseDot /> Summer 2026 Season — Now Live!
           </motion.div>
 
           {/* Headline */}
@@ -76,7 +78,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease }}
           >
-            Ummah's Premier<br />
+            Ummah Premier<br />
             <motion.span
               className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-green-300"
               initial={{ opacity: 0 }}
@@ -132,10 +134,10 @@ export default function Home() {
         {/* ── Stat Cards ── */}
         <section className="py-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <StatCard icon={Users}      value="8"    countTo={8}   label="Teams"          color="bg-green-700"  delay={0} />
-            <StatCard icon={Calendar}   value="11"   countTo={11}  label="Matches Played" color="bg-blue-600"   delay={0.08} />
-            <StatCard icon={Trophy}     value="2025" countTo={null} label="Season"         color="bg-yellow-600" delay={0.16} />
-            <StatCard icon={TrendingUp} value="148"  countTo={148} label="Goals Scored"   color="bg-purple-700" delay={0.24} />
+            <StatCard icon={Users}      value={String(teams.length)} countTo={teams.length}            label="Teams"          color="bg-green-700"  delay={0} />
+            <StatCard icon={Calendar}   value={String(playedMatches.length)} countTo={playedMatches.length} label="Matches Played" color="bg-blue-600"   delay={0.08} />
+            <StatCard icon={Trophy}     value="2026" countTo={null} label="Season"         color="bg-yellow-600" delay={0.16} />
+            <StatCard icon={TrendingUp} value={String(totalGoals)} countTo={totalGoals}      label="Goals Scored"   color="bg-purple-700" delay={0.24} />
           </div>
         </section>
 
@@ -229,7 +231,9 @@ export default function Home() {
                         <span className={`font-bold text-sm ${i === 0 ? 'text-yellow-400' : i < 3 ? 'text-blue-400' : 'text-gray-500'}`}>{i + 1}</span>
                       </td>
                       <td className="px-4 py-3 text-left">
-                        <span className="mr-2">{team.logo}</span>
+                        <span className="mr-2 h-6 w-6 rounded-md bg-[#0f232a] border border-[#173040] p-0.5 inline-flex items-center justify-center align-middle">
+                          <img src={team.logo} alt={`${team.name} logo`} className="h-full w-full object-contain" />
+                        </span>
                         <span className="text-white font-medium">{team.name}</span>
                       </td>
                       <td className="text-center px-2 py-3 text-gray-300">{team.played}</td>

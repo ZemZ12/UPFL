@@ -41,14 +41,14 @@ export default function Fixtures() {
       <div className="text-center mb-12">
         <GlowBadge>
           <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full px-4 py-1.5 text-yellow-400 text-sm font-medium mb-4">
-            <Calendar size={14} /> Season 2025
+            <Calendar size={14} /> Season 2026
           </div>
         </GlowBadge>
         <FadeUp delay={0.05}>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">Fixtures & Results</h1>
         </FadeUp>
         <FadeUp delay={0.15}>
-          <p className="text-gray-400">All match schedules and results for the UPFL Summer 2025 season.</p>
+          <p className="text-gray-400">All match schedules and results for the UPFL Summer 2026 season.</p>
         </FadeUp>
       </div>
 

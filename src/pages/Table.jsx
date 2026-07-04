@@ -9,14 +9,14 @@ export default function Table() {
       <div className="text-center mb-12">
         <GlowBadge>
           <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full px-4 py-1.5 text-yellow-400 text-sm font-medium mb-4">
-            <Trophy size={14} /> Season 2025
+            <Trophy size={14} /> Season 2026
           </div>
         </GlowBadge>
         <FadeUp delay={0.05}>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">League Table</h1>
         </FadeUp>
         <FadeUp delay={0.15}>
-          <p className="text-gray-400">Live standings for the UPFL Summer 2025 season.</p>
+          <p className="text-gray-400">Live standings for the UPFL Summer 2026 season.</p>
         </FadeUp>
       </div>
 
@@ -73,7 +73,9 @@ export default function Table() {
                       </td>
                       <td className="px-5 py-4">
                         <div className="flex items-center gap-2.5">
-                          <span className="text-lg">{team.logo}</span>
+                          <span className="h-7 w-7 rounded-md bg-[#0f232a] border border-[#173040] p-0.5 inline-flex items-center justify-center shrink-0">
+                            <img src={team.logo} alt={`${team.name} logo`} className="h-full w-full object-contain" />
+                          </span>
                           <span className="text-white font-semibold">{team.name}</span>
                         </div>
                       </td>
