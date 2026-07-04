@@ -6,7 +6,7 @@ import sparrowFcLogo from '../assets/teamLogo/sparrowfc.png';
 import tajLogo from '../assets/teamLogo/taj.PNG';
 
 export const teams = [
-  { id: 1, name: "Heavy Breathers", logo: heavyBreathersLogo, wins: 0, draws: 0, losses: 0, gf: 0, ga: 0, color: "from-yellow-500 to-yellow-700" },
+  { id: 1, name: "Heavy Breathers", logo: heavyBreathersLogo, wins: 1, draws: 0, losses: 0, gf: 0, ga: 0, color: "from-yellow-500 to-yellow-700" },
   { id: 2, name: "Ahla Shabab", logo: ahlaShababLogo, wins: 0, draws: 0, losses: 0, gf: 0, ga: 0, color: "from-blue-500 to-blue-700" },
   { id: 3, name: "XL United", logo: xlUnitedLogo, wins: 0, draws: 0, losses: 0, gf: 0, ga: 0, color: "from-red-500 to-red-700" },
   { id: 4, name: "Palestino Athletic", logo: palestinoAthleticLogo, wins: 0, draws: 0, losses: 0, gf: 0, ga: 0, color: "from-green-500 to-green-700" },
