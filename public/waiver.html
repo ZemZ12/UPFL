@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPFL Player Waiver & Liability Release</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #f5f5f0;
+      color: #1a1a1a;
+      padding: 40px 20px;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 60px 70px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+      border-top: 8px solid #c9a227;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #c9a227;
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    .league-name {
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #c9a227;
+      margin-bottom: 8px;
+    }
+    .doc-title {
+      font-size: 26px;
+      font-weight: bold;
+      color: #0d1f2a;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .doc-subtitle {
+      font-size: 13px;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 22px;
+    }
+    .section-title {
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #c9a227;
+      border-bottom: 1px solid #e8e0cc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 13.5px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 8px 0 10px 20px;
+    }
+    ul li {
+      font-size: 13.5px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 4px;
+    }
+
+    /* Signature block */
+    .sig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 10px;
+    }
+    .sig-field {
+      margin-bottom: 18px;
+    }
+    .sig-field label {
+      display: block;
+      font-size: 11px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 6px;
+    }
+    .sig-line {
+      border-bottom: 1.5px solid #333;
+      height: 28px;
+      width: 100%;
+    }
+
+    /* Roster table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+    }
+    thead tr {
+      background: #0d1f2a;
+      color: #c9a227;
+    }
+    thead th {
+      padding: 8px 10px;
+      text-align: left;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    tbody tr:nth-child(even) { background: #f9f7f2; }
+    tbody td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #e5e5e5;
+      color: #2a2a2a;
+    }
+    .num-col { width: 40px; text-align: center; }
+
+    /* Footer note */
+    .footer-note {
+      margin-top: 30px;
+      padding-top: 16px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 11px;
+      font-family: Arial, sans-serif;
+      color: #888;
+      line-height: 1.7;
+    }
+
+    /* Print button — hidden when printing */
+    .print-btn {
+      display: block;
+      margin: 0 auto 30px;
+      padding: 12px 36px;
+      background: #c9a227;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+    .print-btn:hover { background: #b38e1e; }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page { box-shadow: none; padding: 40px 50px; border-top: 6px solid #c9a227; }
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">&#8595; Save / Print as PDF</button>
+
+  <div class="page">
+
+    <div class="header">
+      <div class="league-name">Ummah Premier Futsal League</div>
+      <div class="doc-title">Player Waiver &amp; Liability Release</div>
+      <div class="doc-subtitle">Season 1 &mdash; August 22 &ndash; October 24, 2026 &nbsp;|&nbsp; Hoops Central, Strongsville</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">1. Agreement to Participate</div>
+      <p>
+        I, the undersigned, hereby voluntarily agree to participate in activities organized by the
+        <strong>Ummah Premier Futsal League (UPFL)</strong>, including but not limited to futsal matches,
+        training sessions, and related events during the 2026 season.
+      </p>
+      <p>
+        I acknowledge that I have read this waiver in its entirety, understand its terms, and agree
+        to be bound by them as a condition of my participation.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">2. Assumption of Risk</div>
+      <p>
+        I understand and acknowledge that participation in futsal and related physical activities
+        involves inherent risks, including but not limited to:
+      </p>
+      <ul>
+        <li>Physical contact, collisions, and falls resulting in injury</li>
+        <li>Strains, sprains, fractures, or other musculoskeletal injuries</li>
+        <li>Cardiovascular exertion and related health risks</li>
+        <li>Injuries caused by equipment, facilities, or other participants</li>
+        <li>Any other risks associated with competitive indoor sports</li>
+      </ul>
+      <p>
+        I voluntarily assume all such risks, known and unknown, and accept full responsibility for
+        any injury, loss, or damage that may occur during my participation.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">3. Release of Liability</div>
+      <p>
+        In consideration of being permitted to participate, I hereby release, waive, discharge, and
+        covenant not to sue the <strong>Ummah Premier Futsal League</strong>, its organizers, volunteers,
+        sponsors, venue owners (including Hoops Central Strongsville), and any affiliated individuals
+        (collectively, "Released Parties") from any and all claims, demands, losses, damages, costs,
+        or liabilities arising out of or related to my participation, whether caused by negligence of
+        the Released Parties or otherwise.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">4. Medical Authorization</div>
+      <p>
+        In the event of a medical emergency arising during UPFL activities, I authorize the Released
+        Parties to seek and consent to emergency medical treatment on my behalf if I am unable to do
+        so myself. I agree to be responsible for all costs associated with such treatment.
+      </p>
+      <p>
+        I confirm that I am in adequate physical health to participate in competitive futsal and am
+        not aware of any medical condition that would make such participation unsafe.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">5. Code of Conduct</div>
+      <p>I agree to abide by all UPFL rules and regulations and understand that:</p>
+      <ul>
+        <li>Unsportsmanlike conduct, verbal abuse, or physical aggression may result in immediate removal</li>
+        <li>Red cards may result in suspension from one or more matches at the discretion of UPFL administration</li>
+        <li>Repeated violations may result in permanent removal from the league without refund</li>
+        <li>All decisions by referees and UPFL officials are final during matches</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">6. Media Release</div>
+      <p>
+        I grant the UPFL permission to photograph, record, and publish images or video of me taken
+        during UPFL events for promotional, social media, and documentation purposes, without
+        compensation or further consent required.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">7. Team Captain Signature</div>
+      <p style="font-size:12px; color:#555; margin-bottom:14px;">
+        By signing below, the team captain confirms that all players listed on this form have read,
+        understood, and agree to the terms of this waiver.
+      </p>
+      <div class="sig-grid">
+        <div class="sig-field">
+          <label>Team Name</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Division</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Captain Full Name</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Captain Signature</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Contact Phone</label>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <label>Date</label>
+          <div class="sig-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">8. Player Roster &amp; Individual Signatures</div>
+      <p style="font-size:12px; color:#555; margin-bottom:12px;">
+        Each player must print their name, jersey number, and sign below confirming their agreement to this waiver.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="num-col">#</th>
+            <th>Player Full Name (Print)</th>
+            <th>Jersey #</th>
+            <th>Signature</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 12 rows for player roster -->
+          <tr><td class="num-col">1</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">2</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">3</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">4</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">5</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">6</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">7</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">8</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">9</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">10</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">11</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td class="num-col">12</td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer-note">
+      Ummah Premier Futsal League &mdash; Season 1, 2026 &nbsp;&bull;&nbsp;
+      ummahpremierfutsalleague@gmail.com &nbsp;&bull;&nbsp;
+      @_upfl_ &nbsp;&bull;&nbsp; Hoops Central, Strongsville, OH<br/>
+      This document must be submitted to UPFL administration before or on your team's first match day.
+    </div>
+
+  </div>
+
+</body>
+</html>

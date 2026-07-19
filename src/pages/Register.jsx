@@ -56,8 +56,9 @@ export default function Register() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <motion.a
-                  href="#"
-                  onClick={e => e.preventDefault()}
+                  href="/waiver.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.97 }}
                   className="flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-5 py-2.5 rounded-lg text-sm transition-colors"
