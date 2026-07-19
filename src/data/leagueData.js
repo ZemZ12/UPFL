@@ -230,38 +230,6 @@ The question remains: Who will conquer the road to glory?
 
 The journey begins August 22. Welcome to Season One. Welcome to the UPFL.`,
   },
-  {
-    id: 2,
-    title: "Summer 2026 Season Kicks Off This July!",
-    date: "June 10, 2026",
-    category: "Announcement",
-    image: "⚽",
-    excerpt: "The UPFL Summer 2026 season is officially here. Six teams will battle it out over 8 weeks for the championship trophy. Registration closes June 30.",
-  },
-  {
-    id: 3,
-    title: "New Venue Confirmed: East Side Futsal Center",
-    date: "June 5, 2026",
-    category: "News",
-    image: "🏟️",
-    excerpt: "We're excited to announce a partnership with East Side Futsal Center, adding a second match venue for the upcoming season with state-of-the-art facilities.",
-  },
-  {
-    id: 4,
-    title: "Season Opener Coming Soon",
-    date: "July 5, 2026",
-    category: "Match Report",
-    image: "🏆",
-    excerpt: "The first matches of the UPFL Summer 2026 season are scheduled — stay tuned for full match reports and results.",
-  },
-  {
-    id: 5,
-    title: "Player of the Month: Coming Soon",
-    date: "July 8, 2026",
-    category: "Award",
-    image: "⭐",
-    excerpt: "The Player of the Month award will be announced after the first round of matches. Follow the season to see who takes the golden boot!",
-  },
 ];
 
 export const sponsors = [
