@@ -66,9 +66,15 @@ export default function Sponsors() {
         </FadeUp>
       </div>
 
-      <TierSection tier="Gold" list={gold} />
-      <TierSection tier="Silver" list={silver} />
-      <TierSection tier="Bronze" list={bronze} />
+      <FadeUp delay={0.2}>
+        <div className="bg-[#0b1c1f] border border-yellow-500/20 rounded-2xl p-14 text-center mb-10">
+          <div className="text-5xl mb-4">🏆</div>
+          <h2 className="text-white font-black text-2xl mb-2">Sponsors — To Be Announced</h2>
+          <p className="text-gray-400 text-sm max-w-md mx-auto">
+            Our sponsor lineup for Season 1 is being finalized. Stay tuned for exciting partnerships coming soon.
+          </p>
+        </div>
+      </FadeUp>
 
       {/* Become Sponsor */}
       <FadeUp delay={0.1}>

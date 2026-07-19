@@ -232,14 +232,7 @@ The journey begins August 22. Welcome to Season One. Welcome to the UPFL.`,
   },
 ];
 
-export const sponsors = [
-  { name: "Cleveland Kicks", tier: "Gold", description: "Official Kit Supplier" },
-  { name: "Lake Shore Fitness", tier: "Gold", description: "Official Gym Partner" },
-  { name: "Ohio Sports Drinks", tier: "Silver", description: "Official Hydration Partner" },
-  { name: "North East Printing", tier: "Silver", description: "Media & Print Partner" },
-  { name: "Buckeye Physio", tier: "Bronze", description: "Official Medical Partner" },
-  { name: "CLE Pizza Co.", tier: "Bronze", description: "Official Catering Partner" },
-];
+export const sponsors = [];
 
 export const rules = [
   {
