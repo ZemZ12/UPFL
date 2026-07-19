@@ -3,6 +3,23 @@ import { motion } from 'framer-motion';
 import { FadeUp, StaggerList, StaggerItem, GlowBadge } from '../components/animations';
 import { news } from '../data/leagueData';
 
+function NewsImage({ item, className, emojiClass }) {
+  if (item.imageUrl) {
+    return (
+      <img
+        src={item.imageUrl}
+        alt={item.title}
+        className={`w-full h-full object-cover ${className ?? ''}`}
+      />
+    );
+  }
+  return (
+    <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 ${emojiClass ?? 'text-5xl'}`}>
+      {item.image}
+    </div>
+  );
+}
+
 export default function News() {
   const [featured, ...rest] = news;
 
@@ -29,8 +46,9 @@ export default function News() {
           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
           className="bg-[#0b1c1f] border border-yellow-500/30 rounded-2xl overflow-hidden mb-8 group hover:border-yellow-500/60 transition-all cursor-pointer"
         >
-          <div className="bg-gradient-to-br from-yellow-900/30 to-gray-900 h-52 flex items-center justify-center text-8xl">
-            {featured.image}
+          <div className="h-72 overflow-hidden relative">
+            <NewsImage item={featured} className="group-hover:scale-105 transition-transform duration-500" emojiClass="text-8xl h-full" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1c1f]/80 to-transparent" />
           </div>
           <div className="p-7">
             <div className="flex items-center gap-3 mb-3">
@@ -40,12 +58,17 @@ export default function News() {
             </div>
             <h2 className="text-white font-black text-2xl mb-3 group-hover:text-yellow-400 transition-colors">{featured.title}</h2>
             <p className="text-gray-400 leading-relaxed">{featured.excerpt}</p>
+            {featured.body && (
+              <div className="mt-6 border-t border-[#173040] pt-6 text-gray-300 text-sm leading-relaxed whitespace-pre-line">
+                {featured.body}
+              </div>
+            )}
           </div>
         </motion.div>
       </FadeUp>
 
       {/* Rest */}
-      <StaggerList className="grid grid-cols-1 md:grid-cols-3 gap-5" stagger={0.09}>
+      <StaggerList className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" stagger={0.09}>
         {rest.map(item => (
           <StaggerItem key={item.id}>
             <motion.div
@@ -53,8 +76,8 @@ export default function News() {
               transition={{ type: 'spring', stiffness: 280, damping: 20 }}
               className="bg-[#0b1c1f] border border-[#173040] rounded-xl overflow-hidden hover:border-yellow-500/40 transition-all group cursor-pointer h-full"
             >
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 h-36 flex items-center justify-center text-5xl">
-                {item.image}
+              <div className="h-36 overflow-hidden">
+                <NewsImage item={item} className="group-hover:scale-105 transition-transform duration-500" emojiClass="text-5xl h-full" />
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-2 mb-2.5">

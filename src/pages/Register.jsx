@@ -174,7 +174,7 @@ export default function Register() {
             </div>
 
             <div className="mt-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg text-sm text-blue-300">
-              Registration fee: <strong className="text-white">$300/team</strong> &mdash; payable upon confirmation. Payment details will be sent via email.
+              Registration fee: <strong className="text-white">$1,000/team</strong> &mdash; payable upon confirmation. Payment details will be sent via email.
             </div>
 
             <motion.button

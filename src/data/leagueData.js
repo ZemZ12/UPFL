@@ -30,7 +30,9 @@ export const teamRosters = {
     { name: 'Khalid', size: 'M', number: 9 },
     { name: 'Eric', size: 'L', number: 1 },
     { name: 'Jason', size: 'L', number: 8 },
-    { name: 'Abdulhadi', size: 'M', number: 3 },
+    { name: 'Kareem', size: 'M', number: 3 },
+    { name: 'Jamal', size: 'M', number: 17 },
+    { name: 'Mohammad', size: 'M', number: 6 },
   ],
   'Ahla Shabab': [
     { name: 'Rushdi', size: 'M', number: 6 },
@@ -49,7 +51,7 @@ export const teamRosters = {
     { name: 'Abdullah M', size: 'L', number: 13 },
     { name: 'Mohammad W', size: 'L', number: 7 },
     { name: 'Kasem T', size: 'M', number: 9 },
-    { name: 'Monaldo', size: 'L', number: 17 },
+    { name: 'Mohammed Y', size: 'L', number: 17 },
     { name: 'Yaser Y', size: '2XL', number: 3 },
     { name: 'Eamon De Leon', size: 'M', number: 33 },
     { name: 'Bashar A', size: 'L', number: 2 },
@@ -92,14 +94,46 @@ export const teamRosters = {
 };
 
 export const fixtures = [
-  { id: 1, date: "2026-07-05", time: "6:00 PM", home: "Heavy Breathers", away: "Ahla Shabab", homeScore: null, awayScore: null, played: false, venue: "Cleveland Sports Arena" },
-  { id: 2, date: "2026-07-05", time: "7:30 PM", home: "XL United", away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Cleveland Sports Arena" },
-  { id: 3, date: "2026-07-12", time: "6:00 PM", home: "Sparrow FC", away: "TAJ", homeScore: null, awayScore: null, played: false, venue: "East Side Futsal Center" },
-  { id: 4, date: "2026-07-19", time: "6:00 PM", home: "Ahla Shabab", away: "XL United", homeScore: null, awayScore: null, played: false, venue: "Cleveland Sports Arena" },
-  { id: 5, date: "2026-07-19", time: "7:30 PM", home: "Palestino Athletic", away: "Heavy Breathers", homeScore: null, awayScore: null, played: false, venue: "Cleveland Sports Arena" },
-  { id: 6, date: "2026-07-26", time: "6:00 PM", home: "TAJ", away: "Ahla Shabab", homeScore: null, awayScore: null, played: false, venue: "West Side Arena" },
-  { id: 7, date: "2026-08-02", time: "6:00 PM", home: "Sparrow FC", away: "XL United", homeScore: null, awayScore: null, played: false, venue: "East Side Futsal Center" },
-  { id: 8, date: "2026-08-09", time: "7:30 PM", home: "TAJ", away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Cleveland Sports Arena" },
+  // Aug 22
+  { id: 1,  date: "2026-08-22", time: "7:20 PM", home: "Palestino Athletic", away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 2,  date: "2026-08-22", time: "8:20 PM", home: "Sparrow FC",         away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 3,  date: "2026-08-22", time: "9:20 PM", home: "XL United",          away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Aug 29
+  { id: 4,  date: "2026-08-29", time: "7:20 PM", home: "Heavy Breathers",    away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 5,  date: "2026-08-29", time: "8:20 PM", home: "Ahla Shabab",        away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 6,  date: "2026-08-29", time: "9:20 PM", home: "XL United",          away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Sept 5
+  { id: 7,  date: "2026-09-05", time: "7:20 PM", home: "TBD",                away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 8,  date: "2026-09-05", time: "8:20 PM", home: "Palestino Athletic", away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 9,  date: "2026-09-05", time: "9:20 PM", home: "Heavy Breathers",    away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Sept 12
+  { id: 10, date: "2026-09-12", time: "7:20 PM", home: "TBD",                away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 11, date: "2026-09-12", time: "8:20 PM", home: "Sparrow FC",         away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 12, date: "2026-09-12", time: "9:20 PM", home: "XL United",          away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Sept 19
+  { id: 13, date: "2026-09-19", time: "7:20 PM", home: "Palestino Athletic", away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 14, date: "2026-09-19", time: "8:20 PM", home: "Ahla Shabab",        away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 15, date: "2026-09-19", time: "9:20 PM", home: "XL United",          away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Sept 26
+  { id: 16, date: "2026-09-26", time: "7:20 PM", home: "TBD",                away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 17, date: "2026-09-26", time: "8:20 PM", home: "Heavy Breathers",    away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 18, date: "2026-09-26", time: "9:20 PM", home: "Ahla Shabab",        away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Oct 3
+  { id: 19, date: "2026-10-03", time: "7:20 PM", home: "Palestino Athletic", away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 20, date: "2026-10-03", time: "8:20 PM", home: "TBD",                away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 21, date: "2026-10-03", time: "9:20 PM", home: "Sparrow FC",         away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Oct 10
+  { id: 22, date: "2026-10-10", time: "7:20 PM", home: "Sparrow FC",         away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 23, date: "2026-10-10", time: "8:20 PM", home: "Ahla Shabab",        away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 24, date: "2026-10-10", time: "9:20 PM", home: "XL United",          away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Oct 17
+  { id: 25, date: "2026-10-17", time: "7:20 PM", home: "Ahla Shabab",        away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 26, date: "2026-10-17", time: "8:20 PM", home: "Heavy Breathers",    away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 27, date: "2026-10-17", time: "9:20 PM", home: "Palestino Athletic", away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  // Oct 24
+  { id: 28, date: "2026-10-24", time: "7:20 PM", home: "Heavy Breathers",    away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 29, date: "2026-10-24", time: "8:20 PM", home: "Sparrow FC",         away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 30, date: "2026-10-24", time: "9:20 PM", home: "TBD",                away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
 ];
 
 export const playerStats = [
@@ -111,93 +145,122 @@ export const playerStats = [
   { rank: 5,  name: "Khalid",        team: "Heavy Breathers",     goals: 0, assists: 0, cards: 0 },
   { rank: 6,  name: "Eric",          team: "Heavy Breathers",     goals: 0, assists: 0, cards: 0 },
   { rank: 7,  name: "Jason",         team: "Heavy Breathers",     goals: 0, assists: 0, cards: 0 },
-  { rank: 8,  name: "Abdulhadi",     team: "Heavy Breathers",     goals: 0, assists: 0, cards: 0 },
+  { rank: 8,  name: "Kareem",         team: "Heavy Breathers",     goals: 0, assists: 0, cards: 0 },
+  { rank: 9,  name: "Jamal",          team: "Heavy Breathers",     goals: 0, assists: 0, cards: 0 },
+  { rank: 10, name: "Mohammad",       team: "Heavy Breathers",     goals: 0, assists: 0, cards: 0 },
   // Ahla Shabab
-  { rank: 9,  name: "Rushdi",        team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 10, name: "Kutaibah",      team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 11, name: "Suhaib",        team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 12, name: "Buraq",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 13, name: "Ahmed",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 14, name: "Ameer",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 15, name: "Mourane",       team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 16, name: "Hamza",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 17, name: "Homam",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 18, name: "Muamer",        team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
-  { rank: 19, name: "Saeid",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 11, name: "Rushdi",        team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 12, name: "Kutaibah",      team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 13, name: "Suhaib",        team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 14, name: "Buraq",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 15, name: "Ahmed",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 16, name: "Ameer",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 17, name: "Mourane",       team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 18, name: "Hamza",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 19, name: "Homam",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 20, name: "Muamer",        team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
+  { rank: 21, name: "Saeid",         team: "Ahla Shabab",         goals: 0, assists: 0, cards: 0 },
   // XL United
-  { rank: 20, name: "Abdullah M",    team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 21, name: "Mohammad W",    team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 22, name: "Kasem T",       team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 23, name: "Monaldo",       team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 24, name: "Yaser Y",       team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 25, name: "Eamon De Leon", team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 26, name: "Bashar A",      team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 27, name: "Jehad M",       team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 28, name: "Mohammad H",    team: "XL United",           goals: 0, assists: 0, cards: 0 },
-  { rank: 29, name: "Alex O",        team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 22, name: "Abdullah M",    team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 23, name: "Mohammad W",    team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 24, name: "Kasem T",       team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 25, name: "Mohammed Y",    team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 26, name: "Yaser Y",       team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 27, name: "Eamon De Leon", team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 28, name: "Bashar A",      team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 29, name: "Jehad M",       team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 30, name: "Mohammad H",    team: "XL United",           goals: 0, assists: 0, cards: 0 },
+  { rank: 31, name: "Alex O",        team: "XL United",           goals: 0, assists: 0, cards: 0 },
   // Palestino Athletic
-  { rank: 30, name: "Izzy",          team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
-  { rank: 31, name: "Ali (#21)",     team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
-  { rank: 32, name: "Ali (#8)",      team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
-  { rank: 33, name: "Mushtaba",      team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
-  { rank: 34, name: "Mahmoud",       team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
-  { rank: 35, name: "Adnan",         team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
-  { rank: 36, name: "Mohammed",      team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
-  { rank: 37, name: "Ismaeel",       team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 32, name: "Izzy",          team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 33, name: "Ali (#21)",     team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 34, name: "Ali (#8)",      team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 35, name: "Mushtaba",      team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 36, name: "Mahmoud",       team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 37, name: "Adnan",         team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 38, name: "Mohammed",      team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
+  { rank: 39, name: "Ismaeel",       team: "Palestino Athletic",  goals: 0, assists: 0, cards: 0 },
   // Sparrow FC
-  { rank: 38, name: "Noor",          team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
-  { rank: 39, name: "Christian",     team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
-  { rank: 40, name: "Ahmad",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
-  { rank: 41, name: "Murad",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
-  { rank: 42, name: "Majdi",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
-  { rank: 43, name: "Mamdouh",       team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
-  { rank: 44, name: "Sharky",        team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
-  { rank: 45, name: "Salha",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 40, name: "Noor",          team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 41, name: "Christian",     team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 42, name: "Ahmad",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 43, name: "Murad",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 44, name: "Majdi",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 45, name: "Mamdouh",       team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 46, name: "Sharky",        team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
+  { rank: 47, name: "Salha",         team: "Sparrow FC",          goals: 0, assists: 0, cards: 0 },
   // TAJ
-  { rank: 46, name: "Abu Mustafa",   team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 47, name: "Nemer",         team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 48, name: "Omar",          team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 49, name: "Nebras",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 50, name: "Bassam",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 51, name: "Wahdan",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 52, name: "Aladin",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 53, name: "Sohaib",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 54, name: "Palestine",     team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
-  { rank: 55, name: "Anas",          team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 48, name: "Abu Mustafa",   team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 49, name: "Nemer",         team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 50, name: "Omar",          team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 51, name: "Nebras",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 52, name: "Bassam",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 53, name: "Wahdan",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 54, name: "Aladin",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 55, name: "Sohaib",        team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 56, name: "Palestine",     team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
+  { rank: 57, name: "Anas",          team: "TAJ",                 goals: 0, assists: 0, cards: 0 },
 ];
 
 export const news = [
   {
     id: 1,
-    title: "Summer 2026 Season Kicks Off This July!",
-    date: "June 10, 2026",
-    category: "Announcement",
-    excerpt: "The UPFL Summer 2026 season is officially here. Six teams will battle it out over 8 weeks for the championship trophy. Registration closes June 30.",
-    image: "⚽",
+    title: "The Road to Glory",
+    date: "July 19, 2026",
+    category: "Featured",
+    imageUrl: "/road-to-glory.jpg",
+    excerpt: "Six Teams. One Destination. The First UPFL Title. On August 22, six teams will begin a journey that will forever be remembered as the inaugural season of the Ummah Premier Futsal League.",
+    body: `On August 22, six teams will begin a journey that will forever be remembered as the inaugural season of the Ummah Premier Futsal League (UPFL). For the first time, players from across the community will step onto the court with one goal in mind:
+
+To become the first-ever UPFL Champions.
+
+The road ahead will not be easy.
+
+Over the coming weeks, every pass, every tackle, every save, and every goal will shape the destiny of a season that promises excitement, rivalry, and unforgettable moments. Friendships will be tested, underdogs will rise, and champions will be forged under the bright lights of Saturday night futsal.
+
+Representing the league are six ambitious clubs: Palestino Athletic, Ahla Shabab, Sparrow FC, Heavy Breathers, XL United, and TAJ.
+
+Each team enters the season with its own identity, style, and story. Some arrive as favorites. Others embrace the role of underdog. But once the whistle blows, reputations mean nothing — only performances matter.
+
+Yet the UPFL is about more than trophies and standings. It is about bringing the community together through competition, brotherhood, and a shared love for the game. It is about creating memories, building relationships, and establishing a tradition that can grow for years to come.
+
+When the final whistle blows at the end of the season, one team will lift the trophy and etch its name into UPFL history forever.
+
+The question remains: Who will conquer the road to glory?
+
+The journey begins August 22. Welcome to Season One. Welcome to the UPFL.`,
   },
   {
     id: 2,
-    title: "New Venue Confirmed: East Side Futsal Center",
-    date: "June 5, 2026",
-    category: "News",
-    excerpt: "We're excited to announce a partnership with East Side Futsal Center, adding a second match venue for the upcoming season with state-of-the-art facilities.",
-    image: "🏟️",
+    title: "Summer 2026 Season Kicks Off This July!",
+    date: "June 10, 2026",
+    category: "Announcement",
+    image: "⚽",
+    excerpt: "The UPFL Summer 2026 season is officially here. Six teams will battle it out over 8 weeks for the championship trophy. Registration closes June 30.",
   },
   {
     id: 3,
-    title: "Season Opener Coming Soon",
-    date: "July 5, 2026",
-    category: "Match Report",
-    excerpt: "The first matches of the UPFL Summer 2026 season are scheduled — stay tuned for full match reports and results.",
-    image: "🏆",
+    title: "New Venue Confirmed: East Side Futsal Center",
+    date: "June 5, 2026",
+    category: "News",
+    image: "🏟️",
+    excerpt: "We're excited to announce a partnership with East Side Futsal Center, adding a second match venue for the upcoming season with state-of-the-art facilities.",
   },
   {
     id: 4,
+    title: "Season Opener Coming Soon",
+    date: "July 5, 2026",
+    category: "Match Report",
+    image: "🏆",
+    excerpt: "The first matches of the UPFL Summer 2026 season are scheduled — stay tuned for full match reports and results.",
+  },
+  {
+    id: 5,
     title: "Player of the Month: Coming Soon",
     date: "July 8, 2026",
     category: "Award",
-    excerpt: "The Player of the Month award will be announced after the first round of matches. Follow the season to see who takes the golden boot!",
     image: "⭐",
+    excerpt: "The Player of the Month award will be announced after the first round of matches. Follow the season to see who takes the golden boot!",
   },
 ];
 

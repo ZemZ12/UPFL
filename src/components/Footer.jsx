@@ -1,5 +1,5 @@
 ﻿import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -15,9 +15,7 @@ export default function Footer() {
               Uniting the community through the beautiful game.
             </p>
             <div className="flex flex-col gap-2 text-sm text-gray-400">
-              <span className="flex items-center gap-2"><MapPin size={14} className="text-yellow-400" /> Cleveland Sports Arena, Cleveland, OH</span>
               <span className="flex items-center gap-2"><Mail size={14} className="text-yellow-400" /> ummahpremierfutsalleague@gmail.com</span>
-              <span className="flex items-center gap-2"><Phone size={14} className="text-yellow-400" /> (216) 555-0192</span>
             </div>
           </div>
 

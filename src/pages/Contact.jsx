@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Clock, Send, CheckCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FadeUp, StaggerList, StaggerItem, GlowBadge } from '../components/animations';
 
 const contactInfo = [
-  { icon: MapPin, label: 'Address', value: 'Cleveland Sports Arena\n123 Lakeside Ave\nCleveland, OH 44114', color: 'text-yellow-400' },
   { icon: Mail, label: 'Email', value: 'ummahpremierfutsalleague@gmail.com', color: 'text-blue-400' },
-  { icon: Phone, label: 'Phone', value: '(216) 555-0192', color: 'text-purple-400' },
   { icon: Clock, label: 'Office Hours', value: 'Mon-Fri: 9am - 6pm\nSat: 10am - 2pm', color: 'text-yellow-400' },
 ];
 
@@ -57,12 +55,28 @@ export default function Contact() {
           ))}
 
           <StaggerItem>
-            <div className="bg-[#0b1c1f] border border-[#173040] rounded-xl p-5">
-              <div className="text-gray-400 text-xs font-medium uppercase tracking-wide mb-3">Find Us</div>
-              <div className="bg-[#0f232a] rounded-lg h-36 flex items-center justify-center text-gray-500 text-sm">
-                Cleveland Sports Arena, OH 44114
-              </div>
-            </div>
+            <a
+              href="https://instagram.com/_upfl_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <motion.div
+                whileHover={{ x: 4 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                className="bg-[#0b1c1f] border border-[#173040] hover:border-pink-500/40 rounded-xl p-5 flex items-center gap-4 transition-colors group"
+              >
+                <div className="bg-gradient-to-br from-purple-500 to-pink-500 p-2.5 rounded-lg shrink-0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-gray-400 text-xs font-medium uppercase tracking-wide mb-1">Follow Us</div>
+                  <div className="text-white text-sm font-semibold group-hover:text-pink-400 transition-colors">@_upfl_</div>
+                </div>
+              </motion.div>
+            </a>
           </StaggerItem>
         </StaggerList>
 
