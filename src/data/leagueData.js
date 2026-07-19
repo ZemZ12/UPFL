@@ -95,45 +95,45 @@ export const teamRosters = {
 
 export const fixtures = [
   // Aug 22
-  { id: 1,  date: "2026-08-22", time: "7:20 PM", home: "Palestino Athletic", away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 1,  date: "2026-08-22", time: "7:20 PM", home: "Palestino Athletic", away: "TAJ",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 2,  date: "2026-08-22", time: "8:20 PM", home: "Sparrow FC",         away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 3,  date: "2026-08-22", time: "9:20 PM", home: "XL United",          away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Aug 29
   { id: 4,  date: "2026-08-29", time: "7:20 PM", home: "Heavy Breathers",    away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
-  { id: 5,  date: "2026-08-29", time: "8:20 PM", home: "Ahla Shabab",        away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 5,  date: "2026-08-29", time: "8:20 PM", home: "Ahla Shabab",        away: "TAJ",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 6,  date: "2026-08-29", time: "9:20 PM", home: "XL United",          away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Sept 5
-  { id: 7,  date: "2026-09-05", time: "7:20 PM", home: "TBD",                away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 7,  date: "2026-09-05", time: "7:20 PM", home: "TAJ",                away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 8,  date: "2026-09-05", time: "8:20 PM", home: "Palestino Athletic", away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 9,  date: "2026-09-05", time: "9:20 PM", home: "Heavy Breathers",    away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Sept 12
-  { id: 10, date: "2026-09-12", time: "7:20 PM", home: "TBD",                away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 10, date: "2026-09-12", time: "7:20 PM", home: "TAJ",                away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 11, date: "2026-09-12", time: "8:20 PM", home: "Sparrow FC",         away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 12, date: "2026-09-12", time: "9:20 PM", home: "XL United",          away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Sept 19
   { id: 13, date: "2026-09-19", time: "7:20 PM", home: "Palestino Athletic", away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 14, date: "2026-09-19", time: "8:20 PM", home: "Ahla Shabab",        away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
-  { id: 15, date: "2026-09-19", time: "9:20 PM", home: "XL United",          away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 15, date: "2026-09-19", time: "9:20 PM", home: "XL United",          away: "TAJ",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Sept 26
-  { id: 16, date: "2026-09-26", time: "7:20 PM", home: "TBD",                away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 16, date: "2026-09-26", time: "7:20 PM", home: "TAJ",                away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 17, date: "2026-09-26", time: "8:20 PM", home: "Heavy Breathers",    away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 18, date: "2026-09-26", time: "9:20 PM", home: "Ahla Shabab",        away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Oct 3
   { id: 19, date: "2026-10-03", time: "7:20 PM", home: "Palestino Athletic", away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
-  { id: 20, date: "2026-10-03", time: "8:20 PM", home: "TBD",                away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 20, date: "2026-10-03", time: "8:20 PM", home: "TAJ",                away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 21, date: "2026-10-03", time: "9:20 PM", home: "Sparrow FC",         away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Oct 10
-  { id: 22, date: "2026-10-10", time: "7:20 PM", home: "Sparrow FC",         away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 22, date: "2026-10-10", time: "7:20 PM", home: "Sparrow FC",         away: "TAJ",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 23, date: "2026-10-10", time: "8:20 PM", home: "Ahla Shabab",        away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 24, date: "2026-10-10", time: "9:20 PM", home: "XL United",          away: "Heavy Breathers",    homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Oct 17
   { id: 25, date: "2026-10-17", time: "7:20 PM", home: "Ahla Shabab",        away: "Sparrow FC",         homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
-  { id: 26, date: "2026-10-17", time: "8:20 PM", home: "Heavy Breathers",    away: "TBD",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 26, date: "2026-10-17", time: "8:20 PM", home: "Heavy Breathers",    away: "TAJ",                homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 27, date: "2026-10-17", time: "9:20 PM", home: "Palestino Athletic", away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   // Oct 24
   { id: 28, date: "2026-10-24", time: "7:20 PM", home: "Heavy Breathers",    away: "Ahla Shabab",        homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
   { id: 29, date: "2026-10-24", time: "8:20 PM", home: "Sparrow FC",         away: "Palestino Athletic", homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
-  { id: 30, date: "2026-10-24", time: "9:20 PM", home: "TBD",                away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
+  { id: 30, date: "2026-10-24", time: "9:20 PM", home: "TAJ",                away: "XL United",          homeScore: null, awayScore: null, played: false, venue: "Hoops Central Strongsville" },
 ];
 
 export const playerStats = [
