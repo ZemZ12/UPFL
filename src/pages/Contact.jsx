@@ -11,10 +11,18 @@ const contactInfo = [
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    const res = await fetch('https://formspree.io/f/mvzerppj', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(form),
+    });
+    setLoading(false);
+    if (res.ok) setSent(true);
   };
 
   return (
@@ -167,11 +175,12 @@ export default function Contact() {
 
                 <motion.button
                   type="submit"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 rounded-xl transition-colors flex items-center justify-center gap-2"
+                  disabled={loading}
+                  whileHover={!loading ? { scale: 1.02 } : {}}
+                  whileTap={!loading ? { scale: 0.98 } : {}}
+                  className="bg-yellow-500 hover:bg-yellow-400 disabled:opacity-60 disabled:cursor-not-allowed text-black font-bold py-3 rounded-xl transition-colors flex items-center justify-center gap-2"
                 >
-                  <Send size={16} /> Send Message
+                  <Send size={16} /> {loading ? 'Sending...' : 'Send Message'}
                 </motion.button>
               </motion.form>
             )}

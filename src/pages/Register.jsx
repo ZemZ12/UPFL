@@ -9,13 +9,21 @@ export default function Register() {
     players: '', division: '', shirtColor: '', notes: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [waiverSigned, setWaiverSigned] = useState(false);
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    const res = await fetch('https://formspree.io/f/mgogywwb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(form),
+    });
+    setLoading(false);
+    if (res.ok) setSubmitted(true);
   };
 
   return (
@@ -179,12 +187,12 @@ export default function Register() {
 
             <motion.button
               type="submit"
-              disabled={!waiverSigned}
+              disabled={!waiverSigned || loading}
               whileHover={waiverSigned ? { scale: 1.02 } : {}}
               whileTap={waiverSigned ? { scale: 0.98 } : {}}
               className="mt-6 w-full bg-yellow-500 hover:bg-yellow-400 disabled:bg-gray-700 disabled:text-gray-500 disabled:cursor-not-allowed text-black font-bold py-3.5 rounded-xl transition-colors"
             >
-              {waiverSigned ? 'Submit Registration' : 'Acknowledge Waiver to Continue'}
+              {loading ? 'Submitting...' : waiverSigned ? 'Submit Registration' : 'Acknowledge Waiver to Continue'}
             </motion.button>
           </motion.form>
         )}
